@@ -1,9 +1,16 @@
-// src/app/page.tsx
 "use client";
 import { useEffect, useState } from "react";
-import LineChart from "../components/LineChart";
-import BarChart from "../components/BarChart";
-import DataTable from "../components/DataTable";
+import dynamic from "next/dynamic";
+
+const LineChart = dynamic(() => import("../components/LineChart"), {
+  ssr: false,
+});
+const BarChart = dynamic(() => import("../components/BarChart"), {
+  ssr: false,
+});
+const DataTable = dynamic(() => import("../components/DataTable"), {
+  ssr: false,
+});
 
 const Dashboard = () => {
   const [data, setData] = useState({

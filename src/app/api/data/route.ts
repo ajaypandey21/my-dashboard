@@ -1,4 +1,3 @@
-// src/app/api/data/route.ts
 export async function GET() {
   const data = {
     lineChartData: {

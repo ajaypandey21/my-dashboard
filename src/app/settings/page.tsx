@@ -1,4 +1,3 @@
-// src/app/settings/page.tsx
 const Settings = () => {
   return (
     <div>

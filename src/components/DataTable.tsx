@@ -1,4 +1,3 @@
-// src/components/DataTable.tsx
 type DataTableProps = {
   data: { id: number; name: string; value: number }[];
 };

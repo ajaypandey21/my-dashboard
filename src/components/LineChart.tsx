@@ -1,4 +1,3 @@
-// src/components/LineChart.tsx
 import { Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,
